@@ -20,9 +20,13 @@ public:
 private slots:
     //our slot for receiving a signal
     void handleButton();
+    void handleButton2();
 
 private:
     Ui::MainWindow *ui;
     QPushButton *m_button;
+    QPushButton *m_button2;
+
+    int counter = 0;
 };
 #endif // MAINWINDOW_H

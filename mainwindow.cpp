@@ -16,6 +16,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     //attach the button-press to the function
     connect(m_button, &QPushButton::released, this, &MainWindow::handleButton);
 
+
+    //add another button!
+    m_button2 = new QPushButton("Counter", this);
+    //set the position and size of the button
+    m_button2->setGeometry(QRect(QPoint(400, 100), QSize(200, 50)));
+    //attach the button-press to the function
+    connect(m_button2, &QPushButton::released, this, &MainWindow::handleButton2);
+
 }
 
 //destructor
@@ -41,5 +49,14 @@ void MainWindow::handleButton()
 
     //m_button->setText("Clicked!");
     //m_button->resize(100,100);
+}
+
+//the function is called when we click the second button
+void MainWindow::handleButton2()
+{
+    QString n = QString::number(counter);
+    m_button->setText(n);
+
+    counter++;
 }
 
