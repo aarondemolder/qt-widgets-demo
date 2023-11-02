@@ -40,6 +40,6 @@ void MainWindow::handleButton()
     file.close();
 
     //m_button->setText("Clicked!");
-    m_button->resize(100,100);
+    //m_button->resize(100,100);
 }
 
