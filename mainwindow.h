@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+
 #include <QPushButton>
 
 QT_BEGIN_NAMESPACE
@@ -17,6 +18,7 @@ public:
     ~MainWindow();
 
 private slots:
+    //our slot for receiving a signal
     void handleButton();
 
 private:
