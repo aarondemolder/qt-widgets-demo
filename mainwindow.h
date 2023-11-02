@@ -24,9 +24,12 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QPushButton *m_button;
-    QPushButton *m_button2;
 
+    //button 1 which sets loaded txt to own label
+    QPushButton *m_button;
+
+    //button 2 sets button 1 label to counter value
+    QPushButton *m_button2;
     int counter = 0;
 };
 #endif // MAINWINDOW_H
